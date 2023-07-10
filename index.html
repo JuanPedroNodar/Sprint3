@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Sprint2</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="sectionCards">
+        <img
+          src="./imágenes/bg-card-front.png"
+          alt="Card front"
+          class="front"
+        />
+        <img src="./imágenes/bg-card-back.png" alt="Card back" class="back" />
+
+        <div class="cardExample">
+          <h1 class="cardNumberExample">0000 0000 0000 0000</h1>
+          <p class="cardNameExample">JANE APPLASEED</p>
+          <p>
+            <span class="cardMonthExample">00</span>/<span
+              class="cardYearExample"
+              >00</span
+            >
+          </p>
+        </div>
+        <div class="cardCvcExample">000</div>
+      </section>
+
+      <section class="sectionInputs" id="sectionInputs">
+        <label class="leftLabels">CARDHOLDER NAME</label>
+        <input
+          type="text"
+          placeholder="e.g Jane Appleseed"
+          class="cardName"
+          id="cardName"
+        />
+        <label class="leftLabels">CARD NUMBER</label>
+        <input
+          type="number"
+          placeholder="1234 5678 9123 0000"
+          class="cardNumber"
+          id="cardNumber"
+          maxlength="16"
+          oninput="formatNumber()"
+        />
+        <div class="expDateCvc">
+          <label class="leftLabels" id="leftLabels">EXP. DATE (MM/YY) </label>
+          <label>CVC</label>
+        </div>
+        <div class="date">
+          <input
+            type="number"
+            placeholder="MM"
+            class="cardMM"
+            id="cardMM"
+            maxlength="2"
+          />
+          <input
+            type="number"
+            placeholder="YY"
+            class="cardYY"
+            id="cardYY"
+            maxlength="2"
+          />
+          <input
+            type="password"
+            placeholder="e.g 123"
+            class="cardCVC"
+            id="cardCVC"
+            maxlength="3"
+          />
+        </div>
+        <button class="confirmButton" id="confirmButton">Confirm</button>
+      </section>
+    </div>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
