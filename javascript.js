@@ -88,12 +88,12 @@
         }
       });
 
-     /*  function formatNumber() {
+      function formatNumber() {
         let numeros4 = cardNumber.value;
         let cleanedValue = numeros4.replace(/\D/g, "");
-        let truncatedValue = cleanedValue.slice(0, 16); 
+        let truncatedValue = cleanedValue.slice(0, 19); 
         let groups = truncatedValue.match(/.{1,4}/g); 
         let formattedValue = groups ? groups.join(" ") : "";
         cardNumber.value = formattedValue;
       }
-       */
+      
